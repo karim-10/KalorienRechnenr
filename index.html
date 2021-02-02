@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorien Rechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Kalorien Rechner</h1>
+    <form action="">
+        <div>
+        <label for="">Körpergröße</label>
+        <input type="number" name="" id="height">
+        </div>
+        <div>
+        <label for="">Alter</label>
+        <input type="number" name="" id="age">
+         </div>
+         <div>
+        <label for="">Gewicht</label>
+        <input type="number" name="" id="weight">
+        </div>
+    </form>
+    <form action="">
+        <label for="">Körperbau</label>
+        <div>
+            <input type="radio" name="gender" id="female" checked>
+            <label for="">Weiblich</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male">
+            <label for="">Männlich</label>
+        </div>
+    </form>
+    <article >
+        <h2>Arbeit und Freizeitaktivität</h2>
+        <select name="" id="work">
+            <option value="0.95">Schlafen</option>
+            <option value="1.2">Nur sitzen oder liegen
+            </option>
+            <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der
+                Freizeit, z.B. Büroarbeit</option>
+            <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende,
+                Fließbandarbeiter, Laboranten, Kraftfahrer
+            </option>
+            <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+                Mechaniker, Hausfrauen
+            </option>
+            <option value="2.2">Körperlich anstrengende berufliche Arbeit
+            </option>
+        </select>
+        <input type="button" value="Submit" onclick="calculate()">
+        <table>
+            <tr>
+                <th></th>
+                <th>kcal</th>
+                <th>kJ</th>
+            </tr>
+            <tr>
+                <td>GrundUmsatz</td>
+                <td id="grundumsatzKcal"></td>
+                <td id="grundumsatzKJ"></td>
+            </tr>
+            <tr>
+                <td>Gesamumsatz</td>
+                <td id="gesamumsatzKcal"> </td>
+                <td id="gesamumsatzKJ"></td>
+            </tr>
+        </table>
+</article>
+</main>
+    <script src="main.js"></script>
+</body>
+</html>
